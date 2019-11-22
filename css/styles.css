@@ -1,0 +1,223 @@
+body {
+  margin: 0;
+  text-align: center;
+  font-family: 'Merriweather', serif;
+  font-size: 200%;
+  color: #40514E;
+}
+
+hr {
+  border: dotted #EAF6F6 6px;
+  /*6px HEIGHT horizontal line*/
+  border-bottom: none;
+  /*otherwise, there will be two borders, upper and lower*/
+  width: 4%;
+  /*this will make it scaled to the screen size, shrinkling the screen, tis will shrink too*/
+  margin: 80px auto;   /*changed from Angela's 100px to 80px*/
+}
+
+/* 90px=5.625rem */
+  h1 {
+    font-size: 5.625rem;
+    margin: 50px auto 0 auto;
+    font-family: 'Sacramento', cursive;
+    color: #66BFBF;
+  }
+
+  h2 {
+    font-weight: normal;
+    font-size: 2.5rem;
+    font-family: 'Montserrat', sans-serif;
+    color: #66BFBF;
+    padding-bottom: 10px;
+  }
+
+  h3 {
+    color: #11999E;
+    font-size: 2rem; /*I added this, otherwise, h2 and h3 would have almost the same size*/
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  p {
+    font-size: 1.5rem;
+    line-height: 1.5;
+    /*Angela's line-height is 2, originally it applied only to skill-row, now changed to apply to the p level*/
+  }
+
+  .intro {
+    color: #40514E;
+    width: 30%;
+    /*make the self-introduction line shorter*/
+    margin: auto;
+  }
+
+  .contact-message {
+    width: 50%;
+    /* Angela's 40% will make the message changed from 1 line to 3 lines, I changed width to 50% so it has 2 lines*/
+    margin: 40px auto 60px;
+    /*this will make it centered*/
+  }
+
+
+
+  .skill-row {
+    /*  line-height: 1; */
+    text-align: left;
+    width: 50%;
+    margin: 100px auto 100px auto;
+  }
+
+  .code-img {
+    width: 25%;
+    float: left;
+    margin-right: 15px;
+  }
+
+  /*
+.code-skill-description{
+  clear:left;
+}
+.money-skill-description{
+  clear: right;
+}
+*/
+  .moneytree-img {
+    width: 25%;
+    float: right;
+    margin-left: 15px;
+  }
+
+  /* my own button
+.btn {
+  background-color: #11999E;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-top: 20px;
+  border-radius: 10px;
+}
+*/
+  /*webkit-gradient line was added because this was missing, found out from google search */
+  .btn {
+    background: #11CDD4;
+    background-image: -webkit-linear-gradient(top, #11CDD4, #11999E);
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #11cdd4), color-stop(100%, #11999e));
+    background-image: -moz-linear-gradient(top, #11CDD4, #11999E);
+    background-image: -ms-linear-gradient(top, #11CDD4, #11999E);
+    background-image: -o-linear-gradient(top, #11CDD4, #11999E);
+    background-image: linear-gradient(to bottom, #11CDD4, #11999E);
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+    color: #FFFFFF;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: 100;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+  }
+
+  .btn:hover {
+    background: #30E3CB;
+    background-image: -webkit-linear-gradient(top, #30E3CB, #2bc4ad);
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #30e3cb), color-stop(100%, #2bc4ad));
+    background-image: -moz-linear-gradient(top, #30E3CB, #2bc4ad);
+    background-image: -ms-linear-gradient(top, #30E3CB, #2bc4ad);
+    background-image: -o-linear-gradient(top, #30E3CB, #2bc4ad);
+    background-image: linear-gradient(to bottom, #30E3CB, #2bc4ad);
+    text-decoration: none;
+  }
+
+  .top-container {
+    background-color: #EAF6F6;
+    position: relative;
+    padding-top: 100px;
+  }
+
+  .middle-container {
+    margin: 100px 0;
+  }
+
+  .pro {
+    text-decoration: underline;
+  }
+
+  .top-cloud {
+    position: absolute;
+    right: 300px;
+    top: 40px;
+  }
+
+  .bottom-cloud {
+    position: absolute;
+    left: 250px;
+    bottom: 300px;
+  }
+
+  .bottom-container {
+    background-color: #66BFBF;
+    padding: 50px 0 20px 0;
+  }
+
+  .copy-right {
+    color: #EAF6F6;
+  }
+
+  /* my own way of seperating the footer-link: linkedin, twitter, website*/
+  .footer-link {
+    color: #11999E;
+    margin: 20px;
+  }
+
+  /*this is what Angela wanted but she did not attribute the icon creator like I did
+therefore, if I did this, my attribution would look ugly because there are two
+anchor tags and there will be two sets of margins
+a{
+  color: #11999E;
+  margin: 10px 20px;
+  font-family: 'Montserrat', sans-serif;
+  text-decoration: none;
+}
+*/
+  /*to get rid of the underline that is in the default for something clickable*/
+  /*Also to change the color of the links in the attribution line, changing the color of the class icon-attribtuion would only change the color of the wordsm not the link, the link is "controlled" by the a tag*/
+  a {
+    text-decoration: none;
+    color: #11999E;
+  }
+
+  /*to indicate the links are clickable, a more modern look*/
+  a:hover {
+    color: #EAF6F6;
+  }
+
+  .copy-right {
+    color: #EAF6F6;
+    font-size: 0.75rem;
+    padding: 20px 0;
+  }
+
+  .icon-attribution {
+    color: #11999E;
+    font-size: 0.75rem;
+    padding: 20px 0;
+  }
+
+  /*
+.middle-container {
+  background-color: red;
+  height: 200px;
+  width: 200px;
+}
+.bottom-container {
+  background-color: yellow;
+  height: 200px;
+  width: 200px;
+}
+*/
